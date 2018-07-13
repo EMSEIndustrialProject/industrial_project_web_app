@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Titre{% endblock %}
+
+{% block body %}
+    <div id="app" data-name="{{ user.name }}" >
+        <p>
+            Test : <% test %>
+            <% user %>
+        </p>
+        <Example></Example>
+    </div>
+    <script src="{{ asset('build/app.js') }}"></script>
+{% endblock %}
