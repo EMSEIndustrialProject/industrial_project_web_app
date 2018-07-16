@@ -13,7 +13,7 @@ Encore
 
     // uncomment to define the assets of the project
     .addEntry('app', './assets/js/app.js')
-    // .addStyleEntry('css/app', './assets/css/app.scss')
+    .addStyleEntry('css', './assets/css/app.scss')
 
     .cleanupOutputBeforeBuild()
 
@@ -24,8 +24,10 @@ Encore
 
     .addPlugin(new VueLoaderPlugin())
 
+    .autoProvidejQuery()
+
     // uncomment if you use Sass/SCSS files
-    // .enableSassLoader()
+    .enableSassLoader()
 
     // uncomment for legacy applications that require $/jQuery as a global variable
     // .autoProvidejQuery()

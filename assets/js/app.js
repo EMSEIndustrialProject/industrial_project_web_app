@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Example from './components/Example'
 
+require('bootstrap');
+
 new Vue({
     el: '#app',
     delimiters: ["<%","%>"],
@@ -11,6 +13,6 @@ new Vue({
     },
     components:{ Example },
     mounted: function() {
-        this.user = this.$el.attributes['data-name'].value;
+        this.user = JSON.parse(this.$el.attributes['data-name'].value);
     }
 });

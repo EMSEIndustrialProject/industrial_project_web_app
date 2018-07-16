@@ -13,7 +13,7 @@ class AppController extends Controller
     public function index()
     {
         return $this->render('app/index.html.twig', [
-            'user' => ['name' => 'Robin'],
+            'data' => ['name' => 'Robin'],
         ]);
     }
 }
