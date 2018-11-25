@@ -1,0 +1,88 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Titre{% endblock %}
+
+{% block taches %}active{% endblock %}
+
+{% block profil %}
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Robin31850
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Historique</a>
+            <a class="dropdown-item" href="#">Paramètres</a>
+            <a class="dropdown-item" href="#">Déconnexion</a>
+        </div>
+    </li>
+{% endblock %}
+
+{% block body %}
+
+    <div class="row align-items-center">
+        <div class="col-md-1"></div>
+        <div class="col-12 col-md-10">
+            <h1>Bilan</h1>
+            <h3>Robin : 2h30/semaine</h3>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+            <br>
+            <h3>Eva : 4h/semaine</h3>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+            </div>
+            <br>
+            <h3>Sylvain : 3h30/semaine</h3>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">35%</div>
+            </div>
+            <br>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+    <br>
+
+    <div class="row align-items-center">
+        <div class="col-md-1"></div>
+        <div class="col-12 col-md-10">
+            <h1>Historique</h1>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-md-1"></div>
+        <div class="col-12 col-md-10">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong>Ménage</strong>
+                    <span style="float: right">
+                        Effectué le : 22/11/2018
+                        <button type="button" class="btn btn-dark">Détails</button>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <strong>Vaisselle</strong>
+                    <span style="float: right">
+                        Effectué le : 27/11/2018
+                        <button type="button" class="btn btn-dark">Détails</button>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <strong>Ménage</strong>
+                    <span style="float: right">
+                        Effectué le : 24/11/2018
+                        <button type="button" class="btn btn-dark">Détails</button>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <strong>Vaisselle</strong>
+                    <span style="float: right">
+                        Effectué le : 21/11/2018
+                        <button type="button" class="btn btn-dark">Détails</button>
+                    </span>
+                </li>
+            </ul>
+        </div>
+{% endblock %}

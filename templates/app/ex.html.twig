@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Titre{% endblock %}
+
+{% block body %}
+
+    <div id="app" data-name = "{{ data|json_encode() }}">
+        <p>
+            Test : <% test %>
+            <% user.name %>
+        </p>
+        <Example></Example>
+    </div>
+{% endblock %}

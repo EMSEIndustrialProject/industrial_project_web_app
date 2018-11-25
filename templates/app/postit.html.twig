@@ -1,0 +1,140 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Titre{% endblock %}
+
+{% block postit %}active{% endblock %}
+
+{% block profil %}
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Robin31850
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Historique</a>
+            <a class="dropdown-item" href="#">Paramètres</a>
+            <a class="dropdown-item" href="#">Déconnexion</a>
+        </div>
+    </li>
+{% endblock %}
+
+{% block body %}
+    <div class="row align-items-center">
+        <div class="col-md-1"></div>
+        <div class="col-12 col-md-10">
+            <h1>Messages</h1>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-md-1"></div>
+        <div class="col-12 col-md-10">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong>Robin : </strong>27/10/2018
+                    <span style="float: right">
+                        <button type="button" class="btn btn-danger">Supprimer</button>
+                    </span>
+                    <br>
+                    Le plombier va passer demain à 18h15.
+                </li>
+                <li class="list-group-item">
+                    <strong>Eva : </strong>23/10/2018
+                    <span style="float: right">
+                        <button type="button" class="btn btn-danger">Supprimer</button>
+                    </span>
+                    <br>
+                    J'ai rajouté des pizzas à la liste des courses pour l'invitation à la colocation d'Alexis
+                </li>
+            </ul>
+            <br>
+        </div>
+    </div>
+
+
+
+    <div class="row align-items-center">
+        <div class="col-md-1"></div>
+        <div class="col-8 col-md-8">
+            <input class="form-control">
+        </div>
+        <div class="col-4 col-md-2">
+            <button type="button" class="btn btn-success">Ajouter</button>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <br>
+
+    <div class="row align-items-center">
+        <div class="col-md-1"></div>
+        <div class="col-12 col-md-10">
+            <h1>Tâches à effectuer</h1>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+    <div class="row align-items-center">
+        <div class="col-md-1"></div>
+        <div class="col-12 col-md-10">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong>Ménage</strong>
+                    <span style="float: right">
+                        Deadline : 29/11/2018
+                        <button type="button" class="btn btn-dark">Effectuée</button>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <strong>Vaisselle</strong>
+                    <span style="float: right">
+                        Deadline : 30/11/2018
+                        <button type="button" class="btn btn-dark">Effectuée</button>
+                    </span>
+                </li>
+            </ul>
+            <br>
+            <button type="button" class="btn btn-success">Liste des tâches</button>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <br>
+
+    <div class="row align-items-center">
+        <div class="col-md-1"></div>
+        <div class="col-12 col-md-10">
+            <h1>Remboursement</h1>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+    <div class="row align-items-center">
+        <div class="col-md-1"></div>
+        <div class="col-12 col-md-10">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong>Eva -> Robin :</strong> 25€
+                    <span style="float: right">
+                        <button type="button" class="btn btn-dark">Remboursé</button>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <strong>Sylvain -> Robin :</strong> 25€
+                    <span style="float: right">
+                        <button type="button" class="btn btn-dark">Remboursé</button>
+                    </span>
+                </li>
+            </ul>
+            <br>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+    <div class="row align-items-center">
+        <div class="col-md-1"></div>
+        <div class="col-12 col-md-10">
+            <h1>Courses</h1>
+            <p>Il faut acheter 6 produits : Beurre, Sel, Pâtes, Herbes de provence, Poivre et Huile.</p>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+{% endblock %}

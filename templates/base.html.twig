@@ -2,13 +2,91 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}ColocMines{% endblock %}</title>
         {% block stylesheets %}
         <link rel="stylesheet" href="{{ asset('build/css.css') }}">
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="{{ path("home") }}">
+                <svg aria-hidden="true" data-prefix="fas" data-icon="home" class="svg-inline--fa fa-home fa-w-18 {% block home_activity %} active {% endblock %}" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <path d="M488 312.7V456c0 13.3-10.7 24-24 24H348c-6.6 0-12-5.4-12-12V356c0-6.6-5.4-12-12-12h-72c-6.6 0-12 5.4-12 12v112c0 6.6-5.4 12-12 12H112c-13.3 0-24-10.7-24-24V312.7c0-3.6 1.6-7 4.4-9.3l188-154.8c4.4-3.6 10.8-3.6 15.3 0l188 154.8c2.7 2.3 4.3 5.7 4.3 9.3zm83.6-60.9L488 182.9V44.4c0-6.6-5.4-12-12-12h-56c-6.6 0-12 5.4-12 12V117l-89.5-73.7c-17.7-14.6-43.3-14.6-61 0L4.4 251.8c-5.1 4.2-5.8 11.8-1.6 16.9l25.5 31c4.2 5.1 11.8 5.8 16.9 1.6l235.2-193.7c4.4-3.6 10.8-3.6 15.3 0l235.2 193.7c5.1 4.2 12.7 3.5 16.9-1.6l25.5-31c4.2-5.2 3.4-12.7-1.7-16.9z"></path>
+                </svg>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                {% block navmenu %}
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item {% block postit %}{% endblock %}">
+                            <a class="nav-link" href="{{ path("postit") }}">Home</a>
+                        </li>
+                        <li class="nav-item {% block taches %}{% endblock %}">
+                            <a class="nav-link" href="{{ path("taches") }}">Tâches</a>
+                        </li>
+                        <li class="nav-item {% block courses %}{% endblock %}">
+                            <a class="nav-link" href="{{ path("courses") }}">Courses</a>
+                        </li>
+                        <li class="nav-item {% block finances %}{% endblock %}">
+                            <a class="nav-link" href="{{ path("finances") }}">Finances</a>
+                        </li>
+                        {% block  profil%}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ path("connexion") }}">Connexion</a>
+                            </li>
+                        {% endblock %}
+                    </ul>
+                {% endblock %}
+
+            </div>
+        </nav>
+        <br>
+        <div class="container">
+            <br>
+            {% block body %}
+            <div class="row align-items-center">
+                <div class="col-md-1"></div>
+                <div class="col-12 col-md-10">
+                    <h1>
+                        Contexte
+                    </h1>
+                    <p>
+                        Ce site web est né sur une idée originale de l'élève en troisième année d'école d'ingénieur <a href="https://github.com/RobinCamarasa">Robin Camarasa</a> dans le cadre d'un Projet Etudiant mise en place par <a href="https://www.mines-stetienne.fr/">l'Ecole des Mines de Saint-Etienne</a>.
+                        Ce projet a été mené en colaboration avec l'étudiante en graphisme <a href="https://www.facebook.com/kawani.dossantos">Kawani Dos Santos</a> et le tuteur et conseiller technique de ce projet est le dévellopeur fullstack <a href="https://github.com/NassimD2013">Nassim Djahnit</a>.
+                    </p>
+                    <h1>
+                        Motivation
+                    </h1>
+                    <p>
+                        L'objectif premier de ce projet est la création d'une solution web cross plateform user friendly permettant la gestion d'une colocation. En effet, la colocation autre fois réservé aux étudiants est devenu un phénomène de société.
+                        Mais force est de constaté qu'aucune solution digitale ne permet une gestion globale de ce nouveau mode de vie. C'est içi que notre site web vous permet une gestion globale allant des tâches ménagères jusqu'à la gestion du budget.
+                    </p>
+                    <h1>
+                        Inscription
+                    </h1>
+                    <p>
+                        Inscrivez-vous directemment sur le <a href="{{ path("connexion") }}">site</a> ou via un compte <a href="{{ path("connexion") }}">Google</a> ou via un compte <a href="#">Facebook</a>.
+                    </p>
+                    <h1>
+                        Contact
+                    </h1>
+                    <p>
+                        Vous pouvez contactez par email Robin Camarasa pour toute question en cliquant <a href="mailto:robin.camarasa@gmail.com">ici</a>.
+                    </p>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            {% endblock %}
+        </div>
+
+        <br>
+
+
         {% block javascripts %}
             <script src="{{ asset('build/app.js') }}"></script>
         {% endblock %}

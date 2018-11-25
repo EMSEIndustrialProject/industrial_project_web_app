@@ -1,2 +1,32 @@
-$light: darken(#00cc0b, 20%);
 @import "~bootstrap/scss/bootstrap";
+
+.navbar-brand {
+  > .active {
+    width: 1.5em;
+    color: $white;
+  }
+  > .inactive {
+    width: 1.5em;
+    color: $gray-500;
+  }
+
+}
+
+body {
+  background-color: $gray-500;
+  overflow-y : scroll
+}
+
+p {
+  text-align: justify;
+}
+
+.container {
+  background-color: white;
+}
+
+
+path {
+  fill: currentColor;
+}
+

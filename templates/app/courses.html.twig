@@ -1,0 +1,116 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Titre{% endblock %}
+
+{% block courses %}active{% endblock %}
+
+{% block profil %}
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Robin31850
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Historique</a>
+            <a class="dropdown-item" href="#">Paramètres</a>
+            <a class="dropdown-item" href="#">Déconnexion</a>
+        </div>
+    </li>
+{% endblock %}
+
+{% block body %}
+    <div class="row align-items-center">
+        <div class="col-md-1"></div>
+        <div class="col-12 col-md-10">
+            <h1>A acheter</h1>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-md-1"></div>
+        <div class="col-12 col-md-10">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong>Beurre</strong>
+                    <span style="float: right">
+                        <button type="button" class="btn btn-dark">Panier</button>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <strong>Sel</strong>
+                    <span style="float: right">
+                        <button type="button" class="btn btn-dark">Panier</button>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <strong>Pâtes</strong>
+                    <span style="float: right">
+                        <button type="button" class="btn btn-dark">Panier</button>
+                    </span>
+                </li>
+            </ul>
+            <br>
+        </div>
+    </div>
+
+    <div class="row align-items-center">
+        <div class="col-md-1"></div>
+        <div class="col-8 col-md-8">
+            <input class="form-control">
+        </div>
+        <div class="col-4 col-md-2">
+            <button type="button" class="btn btn-success">Ajouter</button>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+    <br>
+
+    <div class="row align-items-center">
+        <div class="col-md-1"></div>
+        <div class="col-12 col-md-10">
+            <h1>Panier</h1>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+    <div class="row align-items-center">
+        <div class="col-md-1"></div>
+        <div class="col-12 col-md-10">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong>Herbes de provence</strong>
+                    <span style="float: right">
+                        <button type="button" class="btn btn-dark">Retirer</button>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <strong>Poivre</strong>
+                    <span style="float: right">
+                        <button type="button" class="btn btn-dark">Retirer</button>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <strong>Huile</strong>
+                    <span style="float: right">
+                        <button type="button" class="btn btn-dark">Retirer</button>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <br>
+
+    <div class="row align-items-center">
+        <div class="col-md-1"></div>
+        <div class="col-12 col-md-10">
+            <button type="button" class="btn btn-success">Courses effectuées</button>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+    <br>
+
+
+{% endblock %}

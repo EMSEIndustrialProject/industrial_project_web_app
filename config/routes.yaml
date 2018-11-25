@@ -1,3 +1,30 @@
 index:
     path: /
     controller: App\Controller\AppController::index
+
+home:
+    path: /home
+    controller: App\Controller\AppController::home
+
+postit:
+    path: /postit
+    controller: App\Controller\AppController::postit
+
+
+taches:
+    path: /taches
+    controller: App\Controller\AppController::taches
+
+
+courses:
+    path: /courses
+    controller: App\Controller\AppController::courses
+
+
+finances:
+    path: /finances
+    controller: App\Controller\AppController::finances
+
+connexion:
+    path: /connexion
+    controller: App\Controller\AppController::connexion
