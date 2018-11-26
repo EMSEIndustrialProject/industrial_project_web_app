@@ -12,6 +12,7 @@ Encore
     // .enableVersioning(Encore.isProduction())
 
     // uncomment to define the assets of the project
+    .addEntry('logo', './assets/img/icon/logo.png')
     .addEntry('app', './assets/js/app.js')
     .addStyleEntry('css', './assets/css/app.scss')
 

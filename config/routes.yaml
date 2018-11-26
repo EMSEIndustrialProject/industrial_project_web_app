@@ -28,3 +28,7 @@ finances:
 connexion:
     path: /connexion
     controller: App\Controller\AppController::connexion
+
+base:
+    path: /base
+    controller: App\Controller\AppController::base

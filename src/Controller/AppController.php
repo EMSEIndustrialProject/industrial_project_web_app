@@ -55,4 +55,9 @@ class AppController extends Controller
     {
         return $this->render('app/connexion.html.twig');
     }
+
+    public function base()
+    {
+        return $this->render('base.html.twig');
+    }
 }
