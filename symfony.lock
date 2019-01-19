@@ -44,6 +44,9 @@
             "ref": "c1431086fec31f17fbcfe6d6d7e92059458facc1"
         }
     },
+    "doctrine/event-manager": {
+        "version": "v1.0.0"
+    },
     "doctrine/inflector": {
         "version": "v1.3.0"
     },
@@ -59,6 +62,12 @@
     "doctrine/orm": {
         "version": "v2.6.1"
     },
+    "doctrine/persistence": {
+        "version": "v1.1.0"
+    },
+    "doctrine/reflection": {
+        "version": "v1.0.0"
+    },
     "easycorp/easy-log-handler": {
         "version": "1.0",
         "recipe": {
@@ -70,6 +79,9 @@
     },
     "egulias/email-validator": {
         "version": "2.1.4"
+    },
+    "facebook/webdriver": {
+        "version": "1.6.0"
     },
     "fig/link-util": {
         "version": "1.0.0"
@@ -230,9 +242,6 @@
     "symfony/intl": {
         "version": "v4.1.1"
     },
-    "symfony/lts": {
-        "version": "4-dev"
-    },
     "symfony/maker-bundle": {
         "version": "1.0",
         "recipe": {
@@ -259,6 +268,9 @@
     },
     "symfony/orm-pack": {
         "version": "v1.0.5"
+    },
+    "symfony/panther": {
+        "version": "v0.2.0"
     },
     "symfony/phpunit-bridge": {
         "version": "4.1",
@@ -394,9 +406,6 @@
     },
     "symfony/yaml": {
         "version": "v4.1.1"
-    },
-    "twbs/bootstrap": {
-        "version": "v4.1.2"
     },
     "twig/twig": {
         "version": "v2.4.8"
