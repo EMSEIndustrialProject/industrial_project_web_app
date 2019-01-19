@@ -1,6 +1,6 @@
 $theme-colors: (
         "dark": #ff9442,
-        "success": #4f86ff,
+        "success": #ff9442,
         "danger": #e87a77,
         "primary": #4f86ff
 );
@@ -22,7 +22,9 @@ $theme-colors: (
 
 
 body {
-  background-color: $gray-500;
+  background-image: url("../img/icon/pattern.jpg");
+  background-size: 10em;
+  background-color: $gray-600;
   overflow-y : scroll
 }
 
@@ -31,7 +33,15 @@ p {
 }
 
 .container {
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,0.8);
+}
+
+a {
+  color: #ff9442;
+}
+
+a:hover {
+  color: #4f86ff;
 }
 
 
@@ -40,12 +50,15 @@ path {
 }
 
 h1 {
-  color: #ff9442;
-}
-
-strong {
   color: #4f86ff;
 }
+
+.btn:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
 
 .footer {
   color: #ff9442;
